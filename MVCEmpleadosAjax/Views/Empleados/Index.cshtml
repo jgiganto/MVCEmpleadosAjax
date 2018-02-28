@@ -1,0 +1,24 @@
+﻿@model MVCEmpleadosAjax.Models.EMP
+@{
+    ViewBag.Title = "Index";
+}
+
+@section scripts{
+    <script>
+
+        $(document).ready(function () {
+
+            $("#empleados").load("/Empleados/MostrarEmpleados");
+            $("#detalles").load("/Empleados/Detalles");
+
+        });
+
+
+    </script>
+}
+
+<h2>Index</h2>
+<div id="empleados"></div>
+<div id="detalles"></div>
+
+<h1>@ViewBag.Mensaje</h1>

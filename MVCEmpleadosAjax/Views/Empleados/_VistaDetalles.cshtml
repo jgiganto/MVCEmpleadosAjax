@@ -1,0 +1,11 @@
+﻿@model MVCEmpleadosAjax.Models.EMP
+
+@if (Model != null)
+{
+<h2>@Model.APELLIDO</h2>
+<h6>Oficio: @Model.OFICIO</h6>
+<h6>Salario: @Model.SALARIO</h6>
+<h6>Departamento: @Model.DEPT_NO</h6>
+}
+
+<h1>@ViewBag.Mensaje</h1>

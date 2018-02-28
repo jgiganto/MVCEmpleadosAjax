@@ -1,0 +1,9 @@
+﻿@model List<MVCEmpleadosAjax.Models.EMP>
+
+<ul>
+    @foreach(var emp in Model)
+    {
+    <li>@emp.APELLIDO <label>@Html.ActionLink("Detalles", "Detalles", "Empleados",new { empno = emp.EMP_NO},null)</label></li> 
+    }
+</ul>
+<h1>@ViewBag.Mensaje</h1>
